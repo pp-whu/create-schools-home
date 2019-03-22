@@ -1237,3 +1237,7 @@ select {
 
 a {
   text-decoration: underline; }
+
+.logo {
+  position: absolute;
+  top: 0.55556rem; }

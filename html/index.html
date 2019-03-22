@@ -16,7 +16,13 @@
       <img src="img/start-header.jpg" alt="">
       <div class="nav-bar">
         <nav class="main-nav">
-          <ul class="main-menu">
+          <button class="menu-button toggle" data-for="main-menu" title="Menü ein-/ausblenden" aria-haspopup="true" aria-expanded="false">
+            <svg role="img" class="header-symbol" aria-hidden="true" focusable="false">
+              <use xlink:href="img/icons.svg#menu"></use>
+            </svg>
+            <span class="menu-button-label show-for-sr">Menü</span>
+          </button>
+          <ul id="main-menu">
             <li class="orange"><a href="">Philosophie</a></li>
             <li class="rosa"><a href="">Philosophie</a></li>
             <li class="blue"><a href="">Philosophie</a></li>
@@ -65,7 +71,7 @@
           <a class="t-link" href="">
             <img src="" alt="">
             <h2>Kontakt</h2>
-            <span class="subtitle">t  +49 (0)8158-922 55 66 info@createschools.de</span>
+            <span class="subtitle">t +49 (0)8158-922 55 66 info@createschools.de</span>
           </a>
         </article>
         <article class="t-box head">
@@ -90,7 +96,11 @@
       </ul>
     </footer>
 
+<<<<<<< HEAD
+  </div>
+=======
     </div>
+>>>>>>> 00b981876689e97badac639b9393849190cd03e7
 
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="js/svg4everybody.min.js"></script>
