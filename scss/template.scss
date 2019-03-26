@@ -21,6 +21,10 @@
 a {
   text-decoration: underline;
 }
+.page-wrap {
+  max-width: $global-width;
+  margin: 0 auto;
+}
 // logo
 .logo {
   position: absolute;
