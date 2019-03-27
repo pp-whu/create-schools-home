@@ -6,8 +6,7 @@
 @include foundation-typography;
 @include foundation-forms;
 @include foundation-visibility-classes;
-@include foundation-float-classes;
-
+@include foundation-float-classes; // global
 
 %clearfix {
   @include clearfix();
@@ -21,12 +20,111 @@
 a {
   text-decoration: underline;
 }
+
 .page-wrap {
   max-width: $global-width;
   margin: 0 auto;
 }
+// reset
+// header
+
+.header {
+  position: relative;
+}
 // logo
+
 .logo {
   position: absolute;
   top: rem-calc(10);
+}
+// Nav
+
+.nav-bar {
+  position: relative;
+}
+//menu-button
+
+.menu-button {
+  background: $green;
+  color: $white;
+  padding: $grid-gutter/4;
+
+  .symbol {
+    width: rem-calc(25);
+    height: rem-calc(25);
+  }
+}
+@include breakpoint(large) {
+  .menu-button {
+    display: none;
+  }
+}
+
+// menu
+.main-menu {
+  list-style: none; margin: 0;
+
+  li {
+    border-left: rem-calc(55) solid;
+  }
+
+  .orange {
+    border-color: $orange;
+
+    &:focus,
+    &:hover {
+      background: $hover-orange;
+    }
+  }
+
+  .rosa {
+    border-color: $rosa;
+
+    &:focus,
+    &:hover {
+      background: $hover-rosa;
+    }
+  }
+
+  .blue {
+    border-color: $blue;
+
+    &:focus,
+    &:hover {
+      background: $hover-blue;
+    }
+  }
+
+  .olive {
+    border-color: $olive;
+
+    &:focus,
+    &:hover {
+      background: $hover-olive;
+    }
+  }
+
+  .red {
+    border-color: $red;
+
+    &:focus,
+    &:hover {
+      background: $hover-red;
+    }
+  }
+
+  .turkis {
+    border-color: $turkis;
+
+    &:focus,
+    &:hover {
+      background: $hover-turkis;
+    }
+  }
+  a {
+    display: block;
+    padding: $grid-gutter/3 $grid-gutter/6   $grid-gutter/3;
+    font-size: rem-calc(21);
+    text-decoration: none;
+  }
 }

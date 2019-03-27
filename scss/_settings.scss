@@ -51,6 +51,10 @@ $global-lineheight: 1.5;
 $foundation-palette: ( primary: #1779ba, secondary: #767676, success: #3adb76, warning: #ffae00, alert: #cc4b37, );
 $black: #000000;
 $white: #ffffff;
+$light-gray: #ccc;
+$gray: #555;
+$dark-gray: #222; 
+
 
 // my colors
 
@@ -136,7 +140,7 @@ $header-styles: (
 
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
-$header-small-font-color: $gray;
+// $header-small-font-color: $gray;
 $paragraph-lineheight: 1.6;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
