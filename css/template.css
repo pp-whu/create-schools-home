@@ -1235,6 +1235,10 @@ select {
   max-width: 100%;
   overflow: hidden; }
 
+.section {
+  padding-left: 0.83333rem;
+  padding-right: 0.83333rem; }
+
 a {
   text-decoration: underline; }
 
@@ -1295,6 +1299,48 @@ a {
       background: #dee6E5; }
   .main-menu a {
     display: block;
-    padding: 1.11111rem 0.55556rem 1.11111rem;
+    padding: 0.55556rem 0.83333rem;
     font-size: 1.16667rem;
     text-decoration: none; }
+
+.lang-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  list-style-type: none; }
+  .lang-menu li {
+    display: inline-block; }
+    .lang-menu li a {
+      display: block;
+      padding: 0 0.66667rem 0 0.55556rem;
+      margin-right: 0.83333rem;
+      margin-top: 0.55556rem;
+      text-decoration: none; }
+      .lang-menu li a:focus, .lang-menu li a:hover {
+        background: #9ab3af; }
+
+.t-boxes {
+  margin-top: 6.66667rem; }
+
+.t-box {
+  margin-bottom: 1.66667rem; }
+
+.orange-box {
+  background: #f29400;
+  padding: 1.66667rem; }
+  .orange-box a,
+  .orange-box h2 {
+    text-decoration: none;
+    color: #ffffff; }
+
+.head {
+  position: relative; }
+  .head h2 {
+    color: #ffffff;
+    position: absolute;
+    top: 2.5rem;
+    left: 1.66667rem;
+    font-size: 4.44444rem; }
+
+.head-ttl {
+  position: relative; }

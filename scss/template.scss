@@ -17,6 +17,11 @@
   overflow: hidden;
 }
 
+.section {
+  padding-left: $grid-gutter/4;
+  padding-right: $grid-gutter/4;
+}
+
 a {
   text-decoration: underline;
 }
@@ -59,10 +64,11 @@ a {
     display: none;
   }
 }
-
 // menu
+
 .main-menu {
-  list-style: none; margin: 0;
+  list-style: none;
+  margin: 0;
 
   li {
     border-left: rem-calc(55) solid;
@@ -121,10 +127,75 @@ a {
       background: $hover-turkis;
     }
   }
+
   a {
     display: block;
-    padding: $grid-gutter/3 $grid-gutter/6   $grid-gutter/3;
+    padding: $grid-gutter/6 $grid-gutter/4;
     font-size: rem-calc(21);
     text-decoration: none;
   }
+}
+// languages
+
+.lang-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  list-style-type: none;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: block;
+      padding: 0 $grid-gutter/5 0 $grid-gutter/6;
+      margin-right: $grid-gutter/4;
+      margin-top: $grid-gutter/6;
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        background: $turkis;
+      }
+    }
+  }
+}
+// t-boxes
+
+.t-boxes {
+  margin-top: $grid-gutter*2;
+}
+
+.t-box {
+  margin-bottom: $grid-gutter/2;
+}
+// orange-box
+
+.orange-box {
+  background: $orange;
+  padding: $grid-gutter/2;
+
+  a,
+  h2 {
+    text-decoration: none;
+    color: $white;
+  }
+}
+// school, team
+
+.head {
+  position: relative;
+
+  h2 {
+    color: $white;
+    position: absolute;
+    top: rem-calc(45);
+    left: rem-calc(30);
+    font-size: rem-calc(80);
+  }
+}
+
+// anmeldung, kontakt
+.head-ttl {
+  position: relative;
 }
