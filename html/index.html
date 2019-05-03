@@ -9,18 +9,18 @@
   <link rel="stylesheet" href="css/template.css">
 </head>
 
-<body>
+<body class="home">
   <div class="outer">
     <header class="header page-wrap">
       <a href="" class="logo"><img src="img/create-schools-logo.svg" alt=""></a>
-      <img src="img/start-header.jpg" alt="">
+      <img class="start-img" src="img/start-header.jpg" alt="">
       <div class="nav-bar">
         <nav class="main-nav">
           <button class="menu-button toggle" data-for="main-menu" title="Menü ein-/ausblenden" aria-haspopup="true" aria-expanded="false">
-            <svg role="img" class="symbol" aria-hclassden="true" focusable="false">
-              <use xlink:href="img/icons.svg#menu"></use>
-            </svg>
-            <span class="menu-button-label show-for-sr">Menü</span>
+            <span class="menu-button-box">
+              <span class="menu-button-inner"></span>
+            </span>
+            <!-- <span class="menu-button-label">Menü</span> -->
           </button>
           <ul class="main-menu">
             <li class="orange"><a href="">PHILOSOPHIE</a></li>
@@ -28,10 +28,9 @@
             <li class="blue"><a href="">TEAM</a></li>
             <li class="olive"><a href="">STANDORT</a></li>
             <li class="red"><a href="">KONTAKT</a></li>
-              <li class="turkis"><a href="">ANMELDUNG</a></li>
+            <li class="turkis"><a href="">ANMELDUNG</a></li>
           </ul>
         </nav>
-
         <nav class="lang-nav">
           <ul class="lang-menu">
             <li><a href="">DE</a></li>
@@ -42,7 +41,7 @@
     </header>
     <main class="main page-wrap">
       <section class="t-boxes section">
-        <article class="t-box head-ttl orange-box">
+        <article class="t-box orange-box">
           <a class="t-link" href="">
             <h2>Philosophie</h2>
             <span class="subtitle">Bilinguales, projektbasiertes Lernen in Bayern - geht das denn?</span>
@@ -58,7 +57,6 @@
         <article class="t-box head">
           <a class="t-link" href="">
             <img src="img/school.jpg" alt="">
-
             <h2>Team</h2>
           </a>
         </article>
@@ -66,7 +64,6 @@
           <a class="t-link" href="">
             <img src="img/school.jpg" alt="">
             <h2>Anmeldung</h2>
-
             <span class="subtitle">Werden Sie Teil der Create Community</span>
           </a>
         </article>
@@ -77,29 +74,31 @@
             <span class="subtitle">t +49 (0)8158-922 55 66 info@createschools.de</span>
           </a>
         </article>
-        <article class="t-box head">
+        <article class="t-box head-ttl">
           <a class="t-link" href="">
+            <img src="img/school.jpg" alt="">
             <h2>Standort</h2>
             <span class="subtitle">Mitten im Grünen am See...</span>
           </a>
         </article>
       </section>
     </main>
-    <blockquote class="quote">
+    <blockquote class="quote page-wrap">
       <p>„Create Schools ist für mich als Zukunftsforscherin und Referentin<br /> des Zukunftsinstitutes das beste Beispiel für das Neue Lernen”.
       </p>
-      <footer>Susanne Eckers vom Zukunftsinstitut</footer>
+      <footer>„Create Schools ist für mich als Zukunftsforscherin und Referentin des Zukunftsinstitutes das beste Beispiel für das Neue Lernen”</footer>
       <a href="http://www.zukunftsinstitut.de/dossier/megatrend-wissenskultur/" target="_blank" title="Link öffnet in einem neuen Fenster">www.zukunftsinstitut.de</a>
     </blockquote>
 
-    <footer class="footer">
+    <footer class="footer page-wrap">
       <ul class="footer-menu">
         <li><a href="#">Impressum</a></li>
         <li><a href="#">Intern</a></li>
+        <li><a href="#">Sponsoren</a></li>
       </ul>
     </footer>
   </div>
-  
+
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="js/svg4everybody.min.js"></script>
   <script src="js/app.js"></script>
