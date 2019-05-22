@@ -72,9 +72,7 @@
 .menu-button-box {
   display: inline-block;
   width: rem-calc(75);
-  // height: rem-calc(65);
   position: relative;
-  // padding: rem-calc(35) rem-calc(11);
   transition: transform 0.25s;
 }
 
@@ -123,7 +121,7 @@
   display: block;
   margin-top: -$grid-column-gutter / 3.75;
 }
-@include breakpoint (xlarge) {
+@include breakpoint (large) {
   .menu-button {
     display: none;
   }
@@ -153,15 +151,16 @@
 
 .main-menu {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 80rem;
 
   li {
     border-left: rem-calc(60) solid;
-    @include breakpoint (xlarge) {
+    @include breakpoint (large) {
       border-left: none;
       border-top: rem-calc(20) solid;
       float: left;
-      width: rem-calc(130);
+      width: 13%;
       text-align: center;
     }
   }
@@ -251,20 +250,67 @@
     }
   }
 }
+// symbol
 // t-boxes
+@include breakpoint(large) {
+  .wp-block-columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.t-boxes {
-  margin-top: $grid-gutter*2;
+  .main {
+    margin-top: $grid-gutter/2;
+    @include breakpoint (large) {
+      margin-top: $grid-gutter*2;
+    }
+
+    .wp-block-columns {
+      margin-left: -$grid-column-gutter /6;
+      margin-right: -$grid-column-gutter /6;
+    }
+
+    .wp-block-column {
+      padding: $grid-gutter/2 $grid-column-gutter /4;
+
+      &:nth-child(1) {
+        width: 50%;
+      }
+
+      &:nth-child(2) {
+        width: 50%;
+      }
+
+      &:nth-child(3) {
+        width: 50%;
+      }
+
+      &:nth-child(4) {
+        width: 50%;
+      }
+
+      &:nth-child(5) {
+        width: 50%;
+      }
+
+      &:nth-child(6) {
+        width: 50%;
+      }
+    }
+  }
 }
 
 .t-box {
   margin-bottom: $grid-gutter/2;
+  padding-left: $grid-gutter/4;
+  padding-right: $grid-gutter/4;
 }
 // orange-box
 
 .orange-box {
   background: $orange;
-  padding: $grid-gutter/2;
+  margin-top: $grid-column-gutter;
+  margin-bottom: $grid-gutter/2;
+  padding-bottom: $grid-gutter/6;
 
   a {
     display: block;
@@ -310,8 +356,8 @@
   h2 {
     position: absolute;
     color: $white;
+    left: rem-calc(30);
     bottom: rem-calc(40);
-    left: rem-calc(80);
     font-size: rem-calc(60);
   }
 }
@@ -320,23 +366,28 @@
   position: absolute;
   bottom: rem-calc(10);
   color: $white;
-  text-align: center;
+  left: $grid-gutter/2;
 }
 // blockquote
 
 .quote {
-  p {
-    font-size: rem-calc(22);
+  border: none;
+  text-align: left;
+  @include breakpoint(large) {
+    text-align: center;
   }
 
-  footer {
-    text-align: center;
+  p {
+    font-size: rem-calc(22);
   }
 
   a {
     display: block;
     color: $gray;
-    text-align: center;
+    text-align: left;
+    @include breakpoint (large) {
+      text-align: center;
+    }
   }
 }
 // footer
@@ -346,7 +397,7 @@
   list-style: none;
 
   li {
-    @include breakpoint(xxlarge) {
+    @include breakpoint(large) {
       display: inline-block;
       margin: 0 $grid-gutter/2 $grid-gutter 0;
     }
